@@ -22,6 +22,9 @@ var x = document.querySelector('#grand-node div div div div')
   return x;
 }
 
+
+
+
 function increaseRankBy(n){
   const rankedLists = document.querySelectorAll('.ranked-list')
   const firstList = rankedLists[0]
@@ -29,8 +32,8 @@ function increaseRankBy(n){
 
   let children = firstList.children
   let start = 1
-   children = secondList.children;
-   start = 12 ;
+  let children2 = secondList.children;
+  let start2 = 12 ;
 
   let f;
   let l;
@@ -40,7 +43,7 @@ function increaseRankBy(n){
               if(l === 1 ){
                 f = start + parseInt(children[i].innerHTML) + 3;
               }else{
-                f = start - parseInt(children[i].innerHTML) + 3;
+                f = start2 - parseInt(children2[i].innerHTML) + 3;
               }
     }
   return f;
