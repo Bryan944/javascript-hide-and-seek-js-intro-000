@@ -29,8 +29,7 @@ function increaseRankBy(n){
   const rankedLists = document.querySelectorAll('.ranked-list')
   const firstList = rankedLists[0]
   const secondList = rankedLists[1]
-
-  let children = firstList.children
+  let children = firstList.children;
   //let start = 1
   let children2 = secondList.children;
 //  let start2 = 12 ;
@@ -39,12 +38,11 @@ function increaseRankBy(n){
   let l;
               //0         l = 2         0 < 2   i++ =>i=1
   for (let i = 0, l = children.length; i < l; i++) {
-        parseInt(children[i].innerHTML)           //i = 0 => 1;    i = 1 => 2
+               //i = 0 => 1;    i = 1 => 2
                 children[i].innerHTML =  parseInt(children[i].innerHTML) + n;
-
     }
     for (let i = 0, l = children2.length; i < l; i++) {
-          parseInt(children2[i].innerHTML)           //i = 0 => 1;    i = 1 => 2
+                  //i = 0 => 1;    i = 1 => 2
                   children2[i].innerHTML =  parseInt(children2[i].innerHTML) + n;
 
       }
