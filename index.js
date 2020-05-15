@@ -31,20 +31,18 @@ function increaseRankBy(n){
   const secondList = rankedLists[1]
 
   let children = firstList.children
-  let start = 1
+  //let start = 1
   let children2 = secondList.children;
-  let start2 = 12 ;
+//  let start2 = 12 ;
 
   let f;
   let l;
               //0         l = 2         0 < 2   i++ =>i=1
   for (let i = 0, l = children.length; i < l; i++) {
         parseInt(children[i].innerHTML)           //i = 0 => 1;    i = 1 => 2
-              if(l === 1 ){
-                children[i].innerHTML = start + parseInt(children[i].innerHTML) + n;
-              }else{
-                children2[i].innerHTML = start2 - parseInt(children2[i].innerHTML) + n;
-              }
+            
+                children[i].innerHTML =  parseInt(children[i].innerHTML) + n;                
+              
     }
   return f;
 }
