@@ -43,7 +43,7 @@ function increaseRankBy(n){
                 children[i].innerHTML =  parseInt(children[i].innerHTML) + n;
 
     }
-    for (let i = 0, l = children.length; i < l; i++) {
+    for (let i = 0, l = children2.length; i < l; i++) {
           parseInt(children2[i].innerHTML)           //i = 0 => 1;    i = 1 => 2
                   children2[i].innerHTML =  parseInt(children2[i].innerHTML) + n;
 
